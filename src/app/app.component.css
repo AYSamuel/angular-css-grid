@@ -1,0 +1,38 @@
+.grid > * {
+  border: 1px solid red;
+}
+
+.grid {
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 72px auto;
+  grid-template-areas:
+    "side topbar"
+    "side main";
+}
+.side {
+  grid-area: side;
+}
+
+.header {
+  grid-area: topbar;
+}
+
+.body {
+  grid-area: main;
+}
+
+.bg {
+  background-image: url("../assets/bgMap.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  padding: 0 2em;
+}

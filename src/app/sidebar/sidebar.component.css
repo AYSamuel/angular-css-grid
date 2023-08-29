@@ -1,0 +1,33 @@
+section {
+  border: 1px solid red;
+
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  background-color: black;
+  color: white;
+
+  display: flex;
+}
+.display {
+  flex-direction: column;
+  padding: 0 1em;
+  align-content: center;
+}
+.db-content {
+  overflow-y: scroll;
+  max-height: calc(100vh - 4em);
+}
+
+.dashbar {
+  background-color: white;
+  display: none;
+}
+
+/* this can be optional, i only added it just to hide the scrollbar on some browsers */
+.db-content::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  scrollbar-width: none;
+}

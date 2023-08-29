@@ -1,0 +1,8 @@
+section {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.main-content {
+  background-color: white;
+}
